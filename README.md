@@ -3,7 +3,7 @@
 
 Learnovate is an innovative educational institute website designed to provide students with a seamless enrollment experience in a wide array of courses for enhanced learning. It incorporates a user-friendly instructor dashboard that enables instructors to create assignments either manually or with the aid of cutting-edge AI technology. Furthermore, instructors have the capability to make timely announcements, ensuring students are kept abreast of important updates.
 
-Live : https://edu-sphere-seven.vercel.app/
+Live : https://learnovate-fe.vercel.app/sign-in
 
 ## Key Features
 
