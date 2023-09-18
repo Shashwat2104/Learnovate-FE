@@ -1,53 +1,85 @@
+/* Container for the email view */
 .email-view {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+  max-width: 100%; /* Adjusted for responsiveness */
+  margin: 20px auto;
+  background-color: #f8f8f8; /* Updated background color */
+  border: 1px solid #ddd; /* Updated border color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow */
+  padding: 20px;
+}
+
+/* Header styles */
+.email-header h2 {
+  font-size: 1.8rem; /* Increased font size */
+  color: #333;
+  margin-bottom: 10px; /* Improved spacing */
+}
+
+.email-header p {
+  font-size: 1rem; /* Increased font size */
+  color: #555; /* Updated color */
+  margin: 5px 0;
+}
+
+/* Body styles */
+.email-body {
+  margin-top: 20px;
+  font-size: 1.2rem; /* Increased font size */
+  color: #333;
+}
+
+.email-body .description {
+  line-height: 1.6;
+}
+
+/* Course ID and Publish Date */
+.course-id,
+.publish-date {
+  font-size: 1rem; /* Adjusted font size */
+  color: #555; /* Updated color */
+  margin: 0;
+}
+
+/* Back button styles */
+.back-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button a {
+  text-decoration: none;
+  padding: 12px 24px; /* Increased padding */
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  display: inline-block; /* Removed block level for inline display */
+}
+
+.back-button a:hover {
+  background-color: #0056b3; /* Updated hover color */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .email-view {
+      padding: 15px; /* Reduced padding for smaller screens */
   }
   
   .email-header h2 {
-    font-size: 1.5rem;
-    color: #333;
+      font-size: 1.5rem; /* Adjusted font size */
   }
   
   .email-header p {
-    font-size: 0.8rem;
-    color: #666;
-    margin: 5px 0;
+      font-size: 0.9rem; /* Adjusted font size */
   }
   
   .email-body {
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .email-body .description {
-    line-height: 1.6;
-  }
-  
-  .course-id, .publish-date {
-    margin: 0;
-  }
-  
-  .back-button {
-    text-align: center;
-    margin-top: 20px;
+      font-size: 1rem; /* Adjusted font size */
   }
   
   .back-button a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+      padding: 10px 18px; /* Reduced padding for smaller screens */
   }
-  
-  .back-button a:hover {
-    background-color: #0056b3;
-  }
-  
+}

@@ -1,80 +1,96 @@
+/* Main Container */
 .main {
-  width: 65%;
+  width: 90%; /* Adjusted width for better responsiveness */
+  max-width: 1200px; /* Added max width for larger screens */
   margin: 30px auto;
+  font-family: 'Arial', sans-serif; /* Updated font style */
 }
 
+/* Assignment Cards */
 .assigmentscards {
   width: 100%;
-  background-color: white;
+  background-color: #F6F1F1; /* Updated background color */
   padding: 20px;
   border-radius: 0.5rem;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  box-shadow: 0px 4px 8px rgba(9, 30, 66, 0.1); /* Updated box shadow */
+  color: #333; /* Text color */
+  font-family: 'Arial', sans-serif; /* Updated font style */
 }
 
+/* Card */
 .card {
   display: flex;
   width: 100%;
   align-items: center;
   border-radius: 0.6rem;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  box-shadow: 0px 1px 1px rgba(9, 30, 66, 0.13), 0px 0px 1px 1px rgba(9, 30, 66, 0.13); /* Updated box shadow */
   padding: 20px;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px); /* Added a slight upward lift on hover */
+  transition: transform 0.2s ease; /* Smooth transition */
+}
+
+/* Image */
 .img {
   margin-left: 15px;
   padding-right: 20px;
   border-right: 2px solid rgba(0, 0, 0, 0.12);
 }
 
+/* Hover Color Bubble */
 .hover_color_bubble {
   position: absolute;
-  background: rgb(54 81 207 / 15%);
-  width: 120rem;
-  height: 100rem;
+  background: rgba(54, 81, 207, 0.15); /* Updated background color */
+  width: 100%; /* Adjusted width for responsiveness */
+  height: 80px; /* Adjusted height for better visibility */
   left: 0;
   right: 0;
   z-index: -1;
-  top: 16rem;
+  top: 50%; /* Adjusted top position */
   border-radius: 50%;
-  transform: rotate(-36deg);
-  left: -18rem;
+  transform: translate(-50%, -50%) rotate(-36deg); /* Centered and rotated */
   transition: 0.7s;
 }
 
+/* Deadline Section */
 .deadline {
   display: flex;
   align-items: center;
   font-weight: lighter;
-  color: grey;
+  color: #777; /* Updated text color */
 }
 
-
-.deadline>span {
+.deadline > span {
   margin-left: 3px;
   font-size: 1rem;
 }
 
+/* Detail Section */
 .detail-section {
   display: flex;
   margin-left: 12px;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  width: 70%; /* Adjusted width for responsiveness */
 }
 
-
+/* Group */
 .group {
   display: flex;
   line-height: 28px;
   align-items: center;
   position: relative;
-  width: 290px;
-  border: 1px solid #9e9ea7;
+  width: 100%; /* Adjusted width for responsiveness */
+  border: 1px solid #E0E0E0; /* Updated border color */
   border-radius: 0.3rem;
 }
 
+/* Input */
 .input {
   width: 100%;
   height: 48px;
@@ -84,8 +100,8 @@
   border: 2px solid transparent;
   border-radius: 8px;
   outline: none;
-  background-color: white;
-  color: #0d0c22;
+  background-color: #FFF;
+  color: #333; /* Text color */
   transition: .3s ease;
 }
 
@@ -98,9 +114,10 @@ input:hover {
   outline: none;
   border-color: #6558d3;
   background-color: #fff;
-  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+  box-shadow: 0 0 0 4px rgba(234, 76, 137, 0.1);
 }
 
+/* Icon */
 .icon {
   size: 30px;
   position: absolute;
@@ -110,94 +127,101 @@ input:hover {
   height: 1rem;
 }
 
+/* Filter Section */
 .filter {
-  margin: 10px 0 20px 0;
+  margin: 20px 0; /* Increased margin for better spacing */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/* Dropdown */
 .dropDown:hover,
 .dropDown:focus {
-
   border: 1.5px solid #6558d3;
   outline: none;
-  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+  box-shadow: 0 0 0 4px rgba(234, 76, 137, 0.1);
   border-radius: 0.4rem;
 }
 
+/* Empty Container */
 .empty {
   width: 100%;
-  height: 800px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-  /* margin: 0 0 0 40px; */
+  height: 400px; /* Reduced height for better visibility */
+  margin: 20px auto; /* Adjusted margin for better centering */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Added shadow for effect */
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #FF6B6B; /* Updated background color */
+  color: #fff; /* Text color */
+  font-family: 'Arial', sans-serif; /* Updated font style */
+  text-align: center; /* Center-align text */
+  font-size: 24px; /* Increased font size */
 }
 
-
-
+/* Button */
 .button {
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 12px 8px 16px;
+  padding: 8px 16px; /* Adjusted padding for better spacing */
   gap: 8px;
   height: 40px;
   width: 258px;
   border: none;
-  background: #056bfa27;
+  background: #056DFA; /* Updated background color */
   border-radius: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
+/* Label */
 .lable {
   margin-top: 1px;
-  font-size: 19px;
+  font-size: 20px; /* Updated font size */
   line-height: 22px;
-  color: #056DFA;
-  font-family: sans-serif;
+  color: #056DFA; /* Updated text color */
+  font-family: 'Arial', sans-serif; /* Updated font style */
   letter-spacing: 1px;
 }
 
+/* SVG Icon */
 .svg-icon {
-  color: #056DFA;
+  color: #056DFA; /* Icon color */
 }
 
+/* Hover Effect for Button and SVG Icon */
 .button:hover {
-  background: #056bfa49;
+  background: #056DFA99; /* Updated background color on hover */
 }
 
 .button:hover .svg-icon {
-  animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite; /* Added a spinning animation on hover */
 }
 
+/* Keyframes for Spin Animation */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
-
   25% {
     transform: rotate(-8deg);
   }
-
   50% {
     transform: rotate(0deg);
   }
-
   75% {
     transform: rotate(8deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
 }
 
-/* Style the reset button */
+/* Reset Button */
 .reset {
   background-color: #007bff; /* Set the background color */
   color: #fff; /* Set the text color */
@@ -222,11 +246,12 @@ input:hover {
   background-color: #0056b3; /* Change the background color on hover */
 }
 
-
-.flex{
-  width: 350px;
+/* Flex Container */
+.flex {
+  width: 90%; /* Adjusted width for better responsiveness */
+  max-width: 350px; /* Added max width for larger screens */
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  margin: 0 auto; /* Center-align for responsiveness */
 }

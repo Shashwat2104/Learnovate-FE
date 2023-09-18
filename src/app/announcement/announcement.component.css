@@ -1,51 +1,74 @@
+/* Announcement Card */
 .announcement-card {
-   
-    display: flex;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  .announcement-container{
-    width: 70%;
-    margin: 20px auto;
-  }
-  .announcement-icon {
-    flex: 1;
-    max-width: 50px;
-  }
-  
-  .announcement-icon img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .announcement-details {
-    flex: 3;
-    padding-left: 10px;
-  }
-  
-  h2 {
-    font-size: 18px;
-    margin: 0;
-    color: #333;
-  }
-  
-  p {
-    margin: 5px 0;
-    color: #777;
-  }
-  
+  display: flex;
+  background-color: #FF6B6B; /* Updated background color */
+  border: 1px solid #ddd;
+  border-radius: 0.5rem; /* Slightly rounded corners */
+  padding: 20px; /* Increased padding for better spacing */
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #fff; /* Text color */
+  font-family: 'Arial', sans-serif; /* Updated font style */
+}
 
-  .empty{
-    width: 100%;
-    height: 800px;
-    margin: auto ;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Announcement Container */
+.announcement-container {
+  width: 90%; /* Adjusted width for better responsiveness */
+  max-width: 1200px; /* Added max width for larger screens */
+  margin: 20px auto;
+}
+
+/* Announcement Icon */
+.announcement-icon {
+  flex: 1;
+  max-width: 50px;
+}
+
+/* Announcement Icon Image */
+.announcement-icon img {
+  width: 100%;
+  height: auto;
+}
+
+/* Announcement Details */
+.announcement-details {
+  flex: 3;
+  padding-left: 20px; /* Increased padding for better spacing */
+}
+
+/* Heading */
+h2 {
+  font-size: 24px; /* Increased font size */
+  margin: 0;
+  color: #FFAA71; /* Updated text color */
+  font-weight: bold; /* Added font weight */
+}
+
+/* Paragraph */
+p {
+  margin: 10px 0; /* Increased margin for better spacing */
+  color: #FFAA71; /* Updated text color */
+}
+
+/* Empty Container */
+.empty {
+  width: 100%;
+  height: 400px; /* Reduced height for better visibility */
+  margin: 20px auto; /* Adjusted margin for better centering */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Added shadow for effect */
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF6B6B; /* Updated background color */
+  color: #fff; /* Text color */
+  font-family: 'Arial', sans-serif; /* Updated font style */
+  text-align: center; /* Center-align text */
+  font-size: 24px; /* Increased font size */
+}
+
+/* Hover Effect for Announcement Card */
+.announcement-card:hover {
+  transform: translateY(-5px); /* Added a slight upward lift on hover */
+  transition: transform 0.2s ease; /* Smooth transition */
+}

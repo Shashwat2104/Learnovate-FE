@@ -1,46 +1,55 @@
+/* Footer */
 .footer {
-  background-color: #6558d3;
+  background-color: #FF6B6B; /* Updated background color */
   color: #fff;
   padding: 40px 0;
   position: relative;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: 200px auto;
+  margin: 0 auto; /* Center the footer */
+  text-align: center; /* Center align text */
+  font-family: 'Arial', sans-serif; /* Updated font style */
 }
 
+/* Container */
 .container {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px; /* Add spacing to the sides */
 }
 
+/* About Us and Contact Us Sections */
 .about-us,
 .contact-us {
   flex: 1;
-  padding: 0 20px;
+  padding: 20px; /* Increase padding for better spacing */
+  text-align: left; /* Left-align text */
 }
 
 h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 24px; /* Slightly larger font size */
+  margin-bottom: 20px; /* Increased margin for better spacing */
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6; /* Slightly increased line height for readability */
 }
 
 a {
   color: #fff;
   text-decoration: none;
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
+  display: inline-block; /* Remove block display to keep inline */
+  margin-top: 15px; /* Increased margin for better spacing */
+  font-weight: 500; /* Slightly bolder text */
 }
 
+/* Contact Form */
 .contact-form {
-  margin-top: 20px;
+  margin-top: 30px; /* Increased margin for better spacing */
 }
 
 form {
@@ -50,35 +59,39 @@ form {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* Increased margin for better spacing */
   width: 100%;
 }
 
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #fff;
-  border-radius: 5px;
+  padding: 12px; /* Increased padding for better spacing */
+  border: 2px solid #fff; /* Increased border width */
+  border-radius: 8px; /* Slightly rounded corners */
   background-color: transparent;
   color: #fff;
+  font-size: 16px; /* Updated font size */
+  font-family: 'Verdana', sans-serif; /* Updated font style */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Added transition for better feedback */
 }
 
 textarea {
-  resize: none;
+  resize: vertical; /* Allow textarea to resize vertically */
 }
 
+/* Submit Button */
 button {
-  background-color: #fff;
-  color: #6558d3;
-  padding: 10px 20px;
+  background-color: #FFAA71; /* Updated background color */
+  color: #fff;
+  padding: 12px 24px; /* Increased padding for better spacing */
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transitions for better feedback */
 }
 
 button:hover {
-  background-color: #543bb7;
-  color: #fff;
+  background-color: #FF845E; /* Hover background color */
+  color: #fff; /* Hover text color */
 }

@@ -1,39 +1,55 @@
+/* Departments Card */
 .departmentscard {
   width: 90%;
   margin: auto;
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
   padding: 20px;
+  background-color: #FF6B6B; /* Updated background color */
+  color: #fff;
+  font-family: 'Arial', sans-serif; /* Updated font style */
 }
 
+/* Flex Container */
 .flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+/* Login Text */
 .login {
   width: 100%;
-  font-family: sans-serif;
+  font-family: 'Verdana', sans-serif; /* Updated font style */
   font-weight: 700;
   font-size: 25px;
-
+  color: #FFAA71; /* Updated text color */
 }
 
+/* Department Card */
 .card {
-  /* border: 1px solid red; */
   margin-top: 20px;
+  background-color: #fff; /* Updated background color */
+  color: #333; /* Updated text color */
+  border-radius: 0.5rem;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  padding: 20px; /* Increased padding for better spacing */
 }
 
+/* Department Title */
 .depttitle {
   margin-top: 10px;
+  font-size: 20px; /* Updated font size */
+  font-weight: 600; /* Updated font weight */
+  color: #6558d3; /* Updated text color */
 }
 
+/* Plan */
 .plan {
   border-radius: 16px;
   box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
-  padding: 10px;
+  padding: 20px; /* Increased padding for better spacing */
   background-color: #fff;
   color: #697e91;
   max-width: 300px;
@@ -74,7 +90,6 @@
 }
 
 .plan .title {
-
   font-weight: 600;
   font-size: 1.25rem;
   color: #425675;
@@ -132,7 +147,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end; /* Updated alignment */
 }
 
 .plan .button {
@@ -148,6 +163,7 @@
   padding: 0.625em 0.75em;
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transitions for better feedback */
 }
 
 .plan .button:hover,
@@ -155,10 +171,7 @@
   background-color: #4133B7;
 }
 
-/* .plan ul{
-    margin-left: -10px;
-  } */
-
+/* Headers */
 .headers {
   display: flex;
   align-items: center;
